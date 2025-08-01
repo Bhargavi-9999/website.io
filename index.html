@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhargavi's Website</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    header {
+      background: #6200ea;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .container {
+      padding: 1.5rem;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      margin-top: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #6200ea;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    button {
+      background-color: #6200ea;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    button:hover {
+      background-color: #4500b5;
+    }
+
+    footer {
+      margin-top: 2rem;
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Bhargavi's Website</h1>
+    <p>This is a personal portfolio sample</p>
+  </header>
+
+  <div class="container">
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hello! I’m Bhargavi. I enjoy building websites, creating art, and sharing stories.</p>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>💡 Creative Ideas Blog</li>
+        <li>🎨 Drawing App</li>
+        <li>📷 Photography Portfolio</li>
+      </ul>
+    </section>
+
+    <section class="interactive">
+      <h2>Click the Button</h2>
+      <p id="message">Let’s see what happens when you click!</p>
+      <button onclick="showMessage()">Click Me</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>Made with ❤️ by Bhargavi</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      const message = document.getElementById("message");
+      message.textContent = "🎉 Thanks for clicking! You’re awesome!";
+    }
+  </script>
+
+</body>
+</html>
